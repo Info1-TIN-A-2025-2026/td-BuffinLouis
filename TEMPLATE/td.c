@@ -2,6 +2,7 @@
 
 int main(int argc, const char *argv[])
 {
-	puts("Podemos trabalhar...!");
+	puts("laser vago, meilleur bateaux de l'EVTS..!");
+	printf("test de print");
 	return 0;
 }
