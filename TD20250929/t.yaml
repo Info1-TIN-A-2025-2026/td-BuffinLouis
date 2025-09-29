@@ -1,0 +1,10 @@
+tests:
+    - name: test 1
+      stdin: "0"
+      stdout:
+        - contains: "Number of seconds:"
+    - name: test 2
+      stdin: "252525"
+      stdout: 
+        - contains: "0 semaines, 2 jours, 22 heures, 8 minutes, 45 secondes"
+        
