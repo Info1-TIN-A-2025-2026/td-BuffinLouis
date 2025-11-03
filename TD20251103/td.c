@@ -5,7 +5,7 @@
 
 int main(int argc, const char *argv[])
 {
-	//variable locale
+	/*//variable locale
 	unsigned long N = 0;
 	uint8_t W = 0;
 
@@ -18,7 +18,23 @@ int main(int argc, const char *argv[])
 		W++;
 	}
 
-	printf("se represente avec %d digits.\n\n", W);
+	printf("se represente avec %d digits.\n\n", W);*/
+
+
+	// variable locale
+	unsigned int N = atoll(argv[1]);;
+	unsigned int R = 0;
+
+	printf("Le nombre %d s'inverse : \n", N);
+
+	do
+	{
+		R *= 10;
+		R += (N % 10);
+		N = N / 10;
+	} while (N>0);
+
+	printf("%d \n", R);
 
 	return 0;
 }
