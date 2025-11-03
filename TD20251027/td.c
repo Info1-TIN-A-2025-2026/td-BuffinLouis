@@ -41,6 +41,7 @@ int main(int argc, const char *argv[])
 			if ((i % j) == 0)
 			{
 				est_premier = false;
+				break;				// si trouver diviseur on sort.
 			}
 		}
 		if (est_premier)
