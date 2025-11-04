@@ -2,6 +2,7 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "git.ignoreLimitWarning": true,
+    "editor.fontFamily": "Monocraft",
     "debug.internalConsoleOptions": "neverOpen",
     "cmake.configureOnOpen": false,
     "spellright.documentTypes": [
