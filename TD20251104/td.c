@@ -5,11 +5,11 @@
 
 int main(int argc, const char *argv[])
 {
-	// Constante
+/*	// Constante
 	const int V_MIN = 10;
 	const int V_MAX = 20;
 
-	// Variable locale
+ 	// Variable locale
 	int i = 0;
 
 	do
@@ -34,7 +34,31 @@ int main(int argc, const char *argv[])
 
 	} while ((i < V_MIN) || (i > V_MAX));
 
-	printf("i=%d\n", i);
+	printf("i=%d\n", i); */
+
+
+	// Variable locale
+	unsigned int States = 0;
+
+	printf("Enter the state (ON=1, OFF=2, BLINK=4): ");
+	scanf("%u", &States);
+
+	switch (States)
+	{
+	case 1:
+		puts("ON");
+		break;
+	case 2:
+		puts("OFF");
+		break;
+
+	case 4:
+		puts("BLINK");
+		break;
+	default:
+		puts("ERROR");
+		break;
+	}
 
 	return 0;
 }
