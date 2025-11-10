@@ -22,7 +22,7 @@ int main(int argc, const char *argv[])
 
 
 	// variable locale
-	unsigned int N = atoll(argv[1]);;
+	unsigned int N = atoll(argv[1]);
 	unsigned int R = 0;
 
 	printf("Le nombre %d s'inverse : \n", N);
