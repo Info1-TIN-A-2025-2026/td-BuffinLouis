@@ -154,7 +154,7 @@ int main(int argc, char* argv[])
         }
       }
     }
-    }
+  }
 
   else if (strcmp(argv[1], HELP) == 0 || strcmp(argv[1], HELPP) == 0) {
     // Si on a plus de 2 argument alors erreur
