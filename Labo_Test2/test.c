@@ -152,17 +152,23 @@ void rle(const char *signal, const unsigned long num_samples) {
     // compression = (double)num_samples / index;
     // printf("compression rate: x%.1lf",compression);
 	unsigned long count = 1;
-	char states = signal[0];
-	printf("%d", states);
+  unsigned long symbols = 0;
+  char states = signal[0];
+  printf("%d", states);
 	for (unsigned long i = 1; i < num_samples;i++) {
 		if(signal[i-1] == signal[i]) {
 			count++;
 		}
 		else {
 			printf("%lu", count);
-			
-		}
-	}
+      count = 1;
+      states = 1 - states;
+    }
+  }
+  printf("%lu\n", count);
+  symbols++;
+  printf("num symbols in rle: %lu\n",symbols);
+  printf("compression rate: x%.1lf",(double)num_samples / symbols);
 }
 
 // en plus, ajouter.
