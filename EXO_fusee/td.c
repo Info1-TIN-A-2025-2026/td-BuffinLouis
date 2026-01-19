@@ -3,34 +3,26 @@
 #include <stdio.h>
 #include <math.h>
  
-#define PARTIE_ENTIERE 10
-#define PARTIE_DECIMALE 12
+#define VE 				4000	// 4 000 m/s
+#define Total_MASS		750000	// 750 000 kg
+#define empty_MASS		90000	// 90 000 kg
  
 int main(int argc, const char *argv[])
 {
-    long a = 123456;
-    long b = 29;
-    char q[PARTIE_ENTIERE+1+PARTIE_DECIMALE+1]={0};
+	long time = 0;
+	long current_weight = Total_MASS;
+	long next_weight = 0;
+	long MASS_consom = 0;
+	double altitude = 0;
+	double current_speed = 0.;
+	double next_speed = 0;
 
-	int index = PARTIE_ENTIERE - 1;
-	long quotient = a / b;	
-	long reste = a % b;
+	printf("  time |  weight  |  speed  | mass_conso | altitude\n");
+	printf("  %ld |  %ld  |  %ld  | %ld | %ld\n", time, current_weight, current_speed, Total_MASS-current_weight, altitude);
 
-	do {
-		q[index--] = (quotient % 10) + '0';
-		quotient /= 10;
-	} while(quotient > 0);
-
-	for (; index >= 0; index--) {
-		q[index] = ' ';
-	}
-
-	q[PARTIE_ENTIERE] = '.';
-	for (index = PARTIE_ENTIERE+1; index <= PARTIE_ENTIERE+PARTIE_DECIMALE;index++) {
-		long d = reste * 10 / b;
-		q[index] = d + '0';
-		reste = reste - d + b;
-	}
-	q[index] = '\0';
-	printf("q=\"%s\"\n");
+	do
+	{
+		/* code */
+	} while ();
+	
 }
