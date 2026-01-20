@@ -20,9 +20,9 @@ int main(int argc, const char *argv[])
 	printf("  time |  weight  |  speed  | mass_conso | altitude\n");
 	printf("  %ld |  %ld  |  %ld  | %ld | %ld\n", time, current_weight, current_speed, Total_MASS-current_weight, altitude);
 
-	do
-	{
-		/* code */
-	} while ();
+	// do
+	// {
+	// 	/* code */
+	// } while ();
 	
 }
